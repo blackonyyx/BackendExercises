@@ -1,0 +1,3 @@
+To pass configurations from the subchart to the deployment , we first need to identify the environment variables from the dependency chart itself. 
+This can be found from the values.yaml file of the dependency, or through documentation
+Then we access the value through eg {{.Values.postgresql.service.host}} or a helm function like toYaml/toJson

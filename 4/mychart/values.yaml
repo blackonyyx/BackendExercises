@@ -124,6 +124,11 @@ tolerations: []
 
 affinity: {}
 
+
+postgresql:
+  service:
+    type: ClusterIP
+
 # 4a ii)
 extraEnvVars:
   - name: "VAR1"
